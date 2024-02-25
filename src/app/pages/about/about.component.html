@@ -1,6 +1,12 @@
 
 <h2>About</h2>
 
+<a [routerLink]="['../' + ROUTE_TOKENS.HOME,1]"
+   [queryParams]="{discount: true}"
+   queryParamsHandling="merge">
+  Get something with discount
+</a>
+
 <p>Welcome to our About page! At The Store, we're more than just an online store – we're a passionate team dedicated to
 revolutionizing the way you shop. Our journey began with a simple idea: to create a platform where customers can discover
 unique products from around the globe, all in one convenient location. With a focus on quality, innovation, and customer
@@ -16,4 +22,3 @@ culture, values, and mission. Whether you're a first-time visitor or a loyal cus
 About page to learn more about who we are and what we stand for. Join us on this journey and experience the difference
 that Store can make in your shopping experience. Learn more about our  company.
 
-<router-outlet></router-outlet>

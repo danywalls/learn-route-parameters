@@ -1,7 +1,9 @@
 <div class="product-detail">
-  <h3>{{$productSelected()?.title}}</h3>
-  <p>{{$productSelected()?.description}}</p>
-  <img [src]="$productSelected()?.image"/>
-  <span >{{$productSelected()?.price}}</span>
+  <h3>{{ $productSelected()?.title }}</h3>
+  <p>{{ $productSelected()?.description }}</p>
+  <img [src]="$productSelected()?.image" />
+  @if ($discount()) {
+    <span>Congrats you got 5% discount!</span>
+  }
+  <span>{{ $productSelected()?.price }}</span>
 </div>
-

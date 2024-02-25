@@ -14,4 +14,5 @@ export class ProductDetailsComponent {
     return this.productService.$products()?.find(({ id }) => id == this.id());
   });
   id = input<string>('');
+  readonly $discount = this.productService.$discount;
 }
