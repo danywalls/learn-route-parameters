@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  .products {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 100px;
+    padding: 1rem;
+    opacity: 0.8;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}

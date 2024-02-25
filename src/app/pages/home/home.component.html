@@ -1,0 +1,14 @@
+<h2>Welcome to the Store!</h2>
+
+
+<label>
+  Do you want to see the about page ?
+<input #accepterm type="checkbox" (change)="acceptTerms(accepterm.checked)" >
+</label>
+<div class="products">
+  @for (product of $products(); track product) {
+    <img [routerLink]="['../'+ ROUTE_TOKENS.HOME,product.id]"
+
+         [src]="product.image" [alt]="product.description"/>
+  }
+</div>

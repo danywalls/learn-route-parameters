@@ -1,0 +1,22 @@
+
+ul {
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  list-style-type: none;
+  padding: 0;
+  li {
+    margin: 0 9px;
+  }
+  li:hover {
+    cursor: pointer;
+    color: #e87890;
+    font-weight: bold;
+  }
+}
+.active-link {
+  color: #e87890;
+  font-weight: bold;
+}
+
+

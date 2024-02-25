@@ -1,0 +1,17 @@
+<kendo-appbar position="top" themeColor="dark">
+  <kendo-appbar-spacer width="20px"></kendo-appbar-spacer>
+  <kendo-appbar-section>
+    <h1 class="title">The Store</h1>
+  </kendo-appbar-section>
+  <kendo-appbar-spacer width="42px"></kendo-appbar-spacer>
+  <kendo-appbar-section>
+    <ul>
+      <li
+        [routerLinkActive]="'active-link'"
+        [routerLink]="navigation.HOME">Home</li>
+      <li
+        [routerLinkActive]="'active-link'"
+        [routerLink]="navigation.ABOUT">About</li>
+    </ul>
+  </kendo-appbar-section>
+</kendo-appbar>
